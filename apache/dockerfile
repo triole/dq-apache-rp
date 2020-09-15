@@ -1,0 +1,14 @@
+FROM centos:7
+
+ENV PATH=${PATH}:/sh
+
+RUN yum update && yum install -y \
+    httpd \
+    net-tools \
+    vim
+
+RUN rm -f /etc/httpd/conf.d/*.conf
+
+COPY ./rootfs /
+
+CMD ["/bin/sh", "/drun.sh"]

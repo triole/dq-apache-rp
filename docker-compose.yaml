@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+    apache:
+        build:
+            context: ./apache
+        container_name: apache-rp
+        restart: always
+        network_mode: host
+        #ports:
+            # - 9999:80
