@@ -19,7 +19,7 @@ Let's say you want to run Daiquiri behind an Apache reverse proxy having a confi
 	# tell django to be served in a sub path
 	FORCE_SCRIPT_NAME = '/dev'
 	# set static url
-	STATIC_URL = '/dev/static'
+	STATIC_URL = '/dev/static/'
 	```
 
 2.	Fire up the proxy docker
