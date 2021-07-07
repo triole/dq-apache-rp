@@ -18,6 +18,8 @@ Let's say you want to run Daiquiri behind an Apache reverse proxy having a confi
 	USE_X_FORWARDED_HOST = True
 	# tell django to be served in a sub path
 	FORCE_SCRIPT_NAME = '/dev'
+	# to fix redirect after login
+	LOGIN_REDIRECT_URL = '/dev'
 	# set static url
 	STATIC_URL = '/dev/static'
 	```
