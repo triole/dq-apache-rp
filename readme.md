@@ -21,7 +21,7 @@ Let's say you want to run Daiquiri behind an Apache reverse proxy having a confi
 	# to fix redirect after login
 	LOGIN_REDIRECT_URL = '/dev'
 	# set static url
-	STATIC_URL = '/dev/static'
+	STATIC_URL = '/dev/static/'
 	```
 
 2.	Fire up the proxy docker
